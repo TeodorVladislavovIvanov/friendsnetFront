@@ -4,6 +4,20 @@
     border-color: darkviolet;
     margin-right: 10px;
 }
+.nav-link:hover { 
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: rgba(238, 255, 0, 0.986);
+    margin-right: 10px;
+    color:  rgb(255, 0, 234);
+    transition: 0.2s;
+    background: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#navbarText{
+    padding-left: 25%;
+}
 
 .fb-profile-block {
     padding-top: 100px;
