@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="left-panel">
+    <div class="col-xs-12 col-sm-6 col-lg-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-md-12">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="http://www.istanbluegayrimenkul.com/wp-content/uploads/2014/05/image6.jpg" alt="" />
+              </a>
+            </div>
+            <div class="icerik-bilgi">
+              <h2>Teodor</h2>
+              <textarea class="form-control rounded-0" rows="6"></textarea>
+              <div class="btn-group">
+                <a class="btn btn-social btn-facebook" href="#" data-toggle="tooltip" title="Share Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="btn btn-social btn-twitter" href="#" data-toggle="tooltip" title="Share Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-social btn-google" href="#" data-toggle="tooltip" title="Share Google">
+                  <i class="fa fa-google"></i>
+                </a>
+              </div>
+              <a href="#">
+                <button id="botonpost" type="button" class="btn btn-primary">
+                  <span class="btn btn-google">Post
+                    <i class="fa fa-chevron-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+      <h1 class="display-4">{{totalPosts()}} Posts</h1>
+    <ng-container *ngFor="let post of myPosts">
+      <app-post [post]="post"></app-post>
+    </ng-container>
+  </div>
+</div>

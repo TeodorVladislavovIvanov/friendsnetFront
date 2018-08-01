@@ -5,7 +5,9 @@
       "text": "This is a post",
       "creationDate":"19/08/2014",
       "person":{
-        "id":"1"
+        "id": 1,
+        "name": "Teodor",
+        "surname":"Ivanov"
       }
     },
     {
@@ -13,7 +15,9 @@
       "text": "This is the second post",
       "creationDate":"29/03/2013",
       "person":{
-        "id":"2"
+        "id": 2,
+        "name": "James",
+        "surname":"Bond"
       }
     },
     {
@@ -21,7 +25,9 @@
       "text": "This is the third",
       "creationDate":"09/01/2017",
       "person":{
-        "id":"1"
+        "id": 1,
+        "name": "Teodor",
+        "surname":"Ivanov"
       }
     }
   ],
