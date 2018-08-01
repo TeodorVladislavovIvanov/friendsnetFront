@@ -18,7 +18,6 @@ import { PostsFriendsComponent } from './posts/posts-friends/posts-friends.compo
 import { PostsCreatorComponent } from './posts/posts-creator/posts-creator.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 
-
 const routes: Routes = [
     { path: '', component: PostsComponent },
     { path: 'misHistorietas', component: PostsComponent },
