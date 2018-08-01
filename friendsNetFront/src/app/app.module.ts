@@ -14,9 +14,16 @@ import { EventComponent } from './events/event/event.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from './posts/shared/post.service';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
+import { PostsFriendsComponent } from './posts/posts-friends/posts-friends.component';
+import { PostsCreatorComponent } from './posts/posts-creator/posts-creator.component';
+import { UsersListComponent } from './users/users-list/users-list.component';
+
 
 const routes: Routes = [
-    { path: '', component: PostsComponent }
+    { path: '', component: PostsComponent },
+    { path: 'misHistorietas', component: PostsComponent },
+    { path: 'misCosas', component: PostsFriendsComponent },
+    { path: 'misColegas', component: UsersComponent }
   ];
 
 @NgModule({
@@ -29,7 +36,10 @@ const routes: Routes = [
     PostComponent,
     UserComponent,
     EventComponent,
-    PostsListComponent
+    PostsListComponent,
+    PostsFriendsComponent,
+    PostsCreatorComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,

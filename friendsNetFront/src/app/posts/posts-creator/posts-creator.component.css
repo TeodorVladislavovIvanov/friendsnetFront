@@ -1,0 +1,11 @@
+.left-panel{
+    border-radius: 10px;
+    background: rgba(78, 78, 78, 0.384);
+    margin-bottom: 5%;
+}
+
+#botonpost{
+    margin-left: 470px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

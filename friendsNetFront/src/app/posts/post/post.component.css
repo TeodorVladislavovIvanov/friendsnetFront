@@ -1,5 +1,5 @@
 .user_name{
-    font-size:14px;
+    font-size:20px;
     font-weight: bold;
 }
 .comments-list .media{
@@ -9,3 +9,4 @@
 .media{
     border-top:  1px dotted #ccc;
 }
+
