@@ -11,7 +11,7 @@
             </div>
             <div class="icerik-bilgi">
               <h2>Teodor</h2>
-              <textarea class="form-control rounded-0" rows="6"></textarea>
+              <textarea #textPost class="form-control rounded-0" rows="6"></textarea>
               <div class="btn-group">
                 <a class="btn btn-social btn-facebook" href="#" data-toggle="tooltip" title="Share Facebook">
                   <i class="fa fa-facebook"></i>
@@ -23,13 +23,11 @@
                   <i class="fa fa-google"></i>
                 </a>
               </div>
-              <a href="#">
-                <button id="botonpost" type="button" class="btn btn-primary">
+                <button (click)="addPost(textPost.value)" id="botonpost" type="button" class="btn btn-primary">
                   <span class="btn btn-google">Post
                     <i class="fa fa-chevron-right"></i>
                   </span>
                 </button>
-              </a>
             </div>
           </div>
         </div>
@@ -37,7 +35,7 @@
     </div>
   </div>
   <div>
-      <h1 class="display-4">{{totalPosts()}} Posts</h1>
+      <h1 class="display-4">{{myPosts.length}} Posts</h1>
     <ng-container *ngFor="let post of myPosts">
       <app-post [post]="post"></app-post>
     </ng-container>

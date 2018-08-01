@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../shared/post.model';
+import { PostsListComponent } from '../posts-list/posts-list.component';
 
 @Component({
   selector: 'app-post',
@@ -8,9 +9,12 @@ import { Post } from '../shared/post.model';
 })
 export class PostComponent implements OnInit {
   @Input() post: Post;
-  constructor() { }
+  constructor(private postlistComp: PostsListComponent) { }
 
   ngOnInit() {
   }
 
+  deletePost(id:number){
+    this.postlistComp.deletePost(id);
+  }
 }
