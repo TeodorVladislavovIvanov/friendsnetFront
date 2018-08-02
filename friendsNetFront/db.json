@@ -30,7 +30,7 @@
         "id": 2,
         "name": "David",
         "surname": "Bisbal",
-        "friends":[
+        "friends": [
           {
             "id": 3,
             "name": "Tupac",
@@ -60,6 +60,28 @@
           }
         ]
       }
+    },
+    {
+      "creationDate": "2018-08-02T14:31:10.949Z",
+      "text": "dffdfd",
+      "user": {
+        "id": 1,
+        "name": "Roberto",
+        "surname": "Carlos",
+        "friends": [
+          {
+            "id": 3,
+            "name": "Tupac",
+            "surname": "Shakur"
+          },
+          {
+            "id": 4,
+            "name": "Cristiano",
+            "surname": "Ronaldo"
+          }
+        ]
+      },
+      "id": 4
     }
   ],
   "users": [
@@ -84,7 +106,7 @@
       "id": 2,
       "name": "David",
       "surname": "Bisbal",
-      "friends":[
+      "friends": [
         {
           "id": 3,
           "name": "Tupac",
@@ -96,7 +118,7 @@
       "id": 3,
       "name": "Tupac",
       "surname": "Shakur",
-      "friends":[
+      "friends": [
         {
           "id": 2,
           "name": "David",
@@ -113,7 +135,7 @@
       "id": 4,
       "name": "Cristiano",
       "surname": "Ronaldo",
-      "friends":[
+      "friends": [
         {
           "id": 1,
           "name": "Roberto",

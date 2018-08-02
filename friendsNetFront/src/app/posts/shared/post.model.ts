@@ -4,5 +4,5 @@ export class Post {
     id: number;
     text: string;
     creationDate: Date;
-    person:User;
+    user :User;
 }

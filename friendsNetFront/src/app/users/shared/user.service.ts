@@ -24,9 +24,9 @@ export class UserService {
 
     getUserById(id: number): Observable<User> {
         const url = `${this.URL_BASE}/${id}`;
-
         return this.http.get<User>(url, httpOptions);
     }
+
 
     addUser(user: User): Observable<User> {
         const url = `${this.URL_BASE}/${user.id}`;

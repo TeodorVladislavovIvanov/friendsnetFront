@@ -22,7 +22,6 @@ export class PostsListComponent implements OnInit {
   }
 
   deletePost(id:number) {
-    console.log("A tope de pover")
     this.postService.deletePost(id)
       .subscribe(
         data => {
