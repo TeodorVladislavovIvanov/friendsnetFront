@@ -60,28 +60,6 @@
           }
         ]
       }
-    },
-    {
-      "creationDate": "2018-08-02T14:31:10.949Z",
-      "text": "dffdfd",
-      "user": {
-        "id": 1,
-        "name": "Roberto",
-        "surname": "Carlos",
-        "friends": [
-          {
-            "id": 3,
-            "name": "Tupac",
-            "surname": "Shakur"
-          },
-          {
-            "id": 4,
-            "name": "Cristiano",
-            "surname": "Ronaldo"
-          }
-        ]
-      },
-      "id": 4
     }
   ],
   "users": [
