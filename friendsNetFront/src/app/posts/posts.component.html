@@ -1,2 +1,2 @@
-<app-posts-creator></app-posts-creator>
-<app-posts-list></app-posts-list>
+<app-posts-creator (postEmiter)="addPost($event)"></app-posts-creator>
+<app-posts-list *ngIf="myPosts" [myPosts]="myPosts" (delete)="deletePost($event)"></app-posts-list>

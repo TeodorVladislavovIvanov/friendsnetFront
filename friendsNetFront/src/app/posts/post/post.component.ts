@@ -14,7 +14,7 @@ export class PostComponent implements OnInit {
   ngOnInit() {
   }
 
-  deletePost(id:number){
-    this.postlistComp.deletePost(id);
+  deletePost(){
+    this.postlistComp.deletePost(this.post);
   }
 }
