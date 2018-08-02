@@ -4,43 +4,122 @@
       "id": 1,
       "text": "This is a post",
       "creationDate": "19/08/2014",
-      "person": {
+      "user": {
         "id": 1,
-        "name": "Teodor",
-        "surname": "Ivanov"
+        "name": "Roberto",
+        "surname": "Carlos",
+        "friends": [
+          {
+            "id": 3,
+            "name": "Tupac",
+            "surname": "Shakur"
+          },
+          {
+            "id": 4,
+            "name": "Cristiano",
+            "surname": "Ronaldo"
+          }
+        ]
       }
     },
     {
       "id": 2,
       "text": "This is the second post",
       "creationDate": "29/03/2013",
-      "person": {
+      "user": {
         "id": 2,
-        "name": "James",
-        "surname": "Bond"
+        "name": "David",
+        "surname": "Bisbal",
+        "friends":[
+          {
+            "id": 3,
+            "name": "Tupac",
+            "surname": "Shakur"
+          }
+        ]
       }
     },
     {
       "id": 3,
       "text": "This is the third",
       "creationDate": "09/01/2017",
-      "person": {
+      "user": {
         "id": 1,
-        "name": "Teodor",
-        "surname": "Ivanov"
+        "name": "Roberto",
+        "surname": "Carlos",
+        "friends": [
+          {
+            "id": 3,
+            "name": "Tupac",
+            "surname": "Shakur"
+          },
+          {
+            "id": 4,
+            "name": "Cristiano",
+            "surname": "Ronaldo"
+          }
+        ]
       }
     }
   ],
-  "persons": [
+  "users": [
     {
       "id": 1,
-      "name": "namet of person 1",
-      "surname": "surname person1"
+      "name": "Roberto",
+      "surname": "Carlos",
+      "friends": [
+        {
+          "id": 3,
+          "name": "Tupac",
+          "surname": "Shakur"
+        },
+        {
+          "id": 4,
+          "name": "Cristiano",
+          "surname": "Ronaldo"
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "namet of person 2",
-      "surname": "surname person 2"
+      "name": "David",
+      "surname": "Bisbal",
+      "friends":[
+        {
+          "id": 3,
+          "name": "Tupac",
+          "surname": "Shakur"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tupac",
+      "surname": "Shakur",
+      "friends":[
+        {
+          "id": 2,
+          "name": "David",
+          "surname": "Bisbal"
+        },
+        {
+          "id": 1,
+          "name": "Roberto",
+          "surname": "Carlos"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cristiano",
+      "surname": "Ronaldo",
+      "friends":[
+        {
+          "id": 1,
+          "name": "Roberto",
+          "surname": "Carlos"
+        }
+      ]
     }
   ]
 }

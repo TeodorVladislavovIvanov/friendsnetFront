@@ -17,6 +17,7 @@ import { PostsListComponent } from './posts/posts-list/posts-list.component';
 import { PostsFriendsComponent } from './posts/posts-friends/posts-friends.component';
 import { PostsCreatorComponent } from './posts/posts-creator/posts-creator.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
+import { UserService } from './users/shared/user.service';
 
 const routes: Routes = [
     { path: '', component: PostsComponent },
@@ -47,7 +48,7 @@ const routes: Routes = [
     HttpClientModule
     
   ],
-  providers: [PostService],
+  providers: [PostService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

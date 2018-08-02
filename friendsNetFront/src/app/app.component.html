@@ -40,7 +40,7 @@
         </a>
       </div>
       <div class="profile-name">
-        <h2>Teodor Ivanov</h2>
+        <h2 *ngIf="user">{{user.name}}&nbsp;{{user.surname}}</h2>
       </div>
     </div>
     <router-outlet></router-outlet>
