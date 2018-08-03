@@ -11,8 +11,9 @@ import { FriendsCustom } from '../shared/FriendsCustom.model';
 export class UsersListComponent implements OnInit {
 
   user: User;
-  users: User[]=[];
-  usersToshow:FriendsCustom;
+  friendShow: FriendsCustom = new FriendsCustom();
+  users: User[] = [];
+  usersToshow: FriendsCustom[] = [];
   constructor(private userService: UserService) { }
 
   ngOnInit() {
@@ -23,15 +24,33 @@ export class UsersListComponent implements OnInit {
         error => console.error(error),
         () => console.log('users Loaded!')
       );
+      this.showFriends();
+   
   }
 
-  showFriends(){
-    this.users.forEach(user => {
-      
-    });
+  showFriends() {
+    for (let i = 0; i < this.users.length; i++) {
+      let es: boolean = false;
+      for (let x = 0; x < this.users[0].friends.length; x++) {
+        if (this.users[i].id === this.users[0].friends[x].id) {
+          let p: FriendsCustom = new FriendsCustom();
+          p.isFriend = true;
+          p.friend = this.users[0].friends[x];
 
+          this.usersToshow.push(p);
+
+          es = true;
+        }
+      }
+      if (es != true) {
+        let p: FriendsCustom = new FriendsCustom();
+        p.isFriend = false;
+        p.friend = this.users[i];
+        if (p.friend.id != 1) {
+          this.usersToshow.push(p);
+        }
+      }
+    }
+    console.log(this.usersToshow);
   }
-
-
-
 }

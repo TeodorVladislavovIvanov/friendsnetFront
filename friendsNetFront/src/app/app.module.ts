@@ -18,6 +18,7 @@ import { PostsFriendsComponent } from './posts/posts-friends/posts-friends.compo
 import { PostsCreatorComponent } from './posts/posts-creator/posts-creator.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserService } from './users/shared/user.service';
+import { UserInfoComponent } from './users/user-info/user-info.component';
 
 const routes: Routes = [
     { path: '', component: PostsComponent },
@@ -39,7 +40,8 @@ const routes: Routes = [
     PostsListComponent,
     PostsFriendsComponent,
     PostsCreatorComponent,
-    UsersListComponent
+    UsersListComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,

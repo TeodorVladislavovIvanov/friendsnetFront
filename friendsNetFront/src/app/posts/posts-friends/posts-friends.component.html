@@ -1,10 +1,15 @@
 <div class="container">
     <div class="row">
+        <div class="col-12">
+            <app-user-info></app-user-info>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-6">
-        <app-posts-list *ngIf="myPosts" [myPosts]="myPosts"></app-posts-list>
+            <app-posts-list *ngIf="myPosts" [myPosts]="myPosts"></app-posts-list>
         </div>
         <div class="col-6">
-        <app-users-list></app-users-list>
+            <app-users-list></app-users-list>
         </div>
     </div>
 </div>

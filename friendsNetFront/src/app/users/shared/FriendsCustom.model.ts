@@ -1,6 +1,7 @@
-import { User } from "./user.model";
+
+import { Friend } from "./friend.model";
 
 export class FriendsCustom {
-   user:User;
+   friend:Friend;
    isFriend:boolean;
 }
