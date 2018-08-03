@@ -19,6 +19,7 @@ export class PostsComponent implements OnInit {
         error => console.error(error),
         () => console.log('Posts Loaded!')
       );
+      
   }
 
   addPost(post: Post) {
