@@ -9,3 +9,11 @@ i {  vertical-align: middle; }
 .user_panel {
     width: 50%;
 }
+
+.container{
+    margin:auto;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    background: rgba(143, 143, 143, 0.39);
+    padding: 4%;
+}

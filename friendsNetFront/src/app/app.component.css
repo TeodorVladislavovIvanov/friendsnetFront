@@ -1,17 +1,21 @@
 .nav-link {
     border-radius: 10px;
     border-style: solid;
-    border-color: darkviolet;
+    border-color: rgba(255, 255, 255, 0.137);
     margin-right: 10px;
+    color: white;
 }
 .nav-link:hover { 
     border-radius: 10px;
-    border-style: dotted;
-    border-color: rgba(238, 255, 0, 0.986);
+    border-color: rgba(255, 255, 255, 0.596);
     margin-right: 10px;
-    color:  rgb(255, 0, 234);
-    transition: 0.2s;
-    background: rgb(0, 0, 0);
+    transition: 0.1s;
+    color: black;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    background: rgba(214, 214, 214, 0.877);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -68,7 +72,8 @@
     position: absolute;
   }
   .profile-name h2 {
-    background: rgba(255, 255, 255, 0.39);
+    background: rgba(255, 255, 255, 0.541);
+    padding: 10px;
     border-radius: 10px;
     color: black;
     font-size: 30px;
@@ -76,7 +81,6 @@
     line-height: 30px;
     max-width: 275px;
     position: relative;
-    text-transform: uppercase;
   }
 
  

@@ -20,12 +20,14 @@ export class UsersListComponent implements OnInit {
     this.userService.getUserById(1).subscribe(userAux => this.user = userAux);
 
     this.userService.getUserList()
-      .subscribe((data: User[]) => this.users = data,
+      .subscribe((data: User[]) => {
+        this.users = data;
+        this.showFriends();
+      },
         error => console.error(error),
         () => console.log('users Loaded!')
       );
-      this.showFriends();
-   
+
   }
 
   showFriends() {
@@ -51,6 +53,5 @@ export class UsersListComponent implements OnInit {
         }
       }
     }
-    console.log(this.usersToshow);
   }
 }
